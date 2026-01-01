@@ -25,7 +25,7 @@ export default function Navbar() {
                     <Link href='/guide' className="mx-5 my-1 text-sm lg:text-base text-white hover:text-gray-400">Guide</Link>
                     <Link href='/diet' className="mx-5 my-1 text-sm lg:text-base text-white hover:text-gray-400">Diet Plans</Link>
                     <Link href='/exercise' className="mx-5 my-1 text-sm lg:text-base text-white hover:text-gray-400">Exercise</Link>
-                    <Link href='/' className="mx-5 my-1 text-sm lg:text-base text-white hover:text-gray-400">Pricing</Link>
+                    
                 </div>
             </div>
         </div>
