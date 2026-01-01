@@ -5,6 +5,7 @@ export default function Home() {
     <div className="relative">
       {/* Hero Section with Background Image */}
       <div className="relative h-screen w-full overflow-hidden">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           className="absolute top-0 left-0 w-full h-full object-cover"
           src="https://invertase.io/_next/image?url=%2F_next%2Fstatic%2Fmedia%2F6c8c2208b2198db37a82d185bca3646d.svg&w=3840&q=75"

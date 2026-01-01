@@ -30,3 +30,14 @@ model Rep {
 
   session      WorkoutSession @relation(fields: [sessionId], references: [id], onDelete: Cascade)
 }
+
+model User {
+  id            String   @id @default(cuid())
+  email         String   @unique
+  name          String?
+  passwordHash  String?
+  picture       String?
+  sub           String?  @unique
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+}

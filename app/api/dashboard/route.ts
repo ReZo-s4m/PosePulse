@@ -1,4 +1,3 @@
-import prisma from "../../db";
 import { NextResponse } from "next/server";
 
 const demoSessions = [
@@ -37,7 +36,7 @@ export async function GET() {
 
     // Use demo data
     const todayDemo = demoSessions.filter(s => s.date === today);
-    const todaysTotal = todayDemo.reduce((sum: number, s: any) => sum + (s.totalReps || 0), 0);
+    const todaysTotal = todayDemo.reduce((sum: number, s) => sum + (s.totalReps || 0), 0);
     return NextResponse.json({ ok: true, data: { todaySessions: todayDemo, recent: demoSessions, todaysTotal } });
   } catch (err) {
     console.error('Error fetching sessions:', err);
